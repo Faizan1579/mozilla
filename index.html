@@ -99,14 +99,13 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
+      <img src="firefox_logo-only_RGB120px.png" 
 
     </header>
 
     <main>
       <article>
-        <!-- insert iframe from youtube -->
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -118,22 +117,39 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img srcset="firefox_logo-only_RGB120px 120w, firefox_logo-only_RGB400px.png 400w"
+            sizes="(max-width: 500px) 120px, 400px"
+            src="firefox_logo-only_RGB-400.png" alt="firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="mozilla-dinosaur-head120px.png 120w, mozilla-dinosaur-head400px.png 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="mozilla-dinosaur-head-400.png" 
+          alt="dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="firefox-addons 120px.jpg 120w, firefox-addons 400px.jpg 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="firefox-addons-400.jpg" 
+          alt="firefox add-ons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img 
+            src="mdn.svg" 
+            alt="mdn">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source 
+            media="(max-width:600px)" 
+            srcset="red-panda600px.jpg">
+          <img 
+            src="red-panda1200px.jpg" 
+            alt="red panda">
+        </picture>
       </div>
 
     </main>
